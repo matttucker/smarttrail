@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ListItemContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/star_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:contentDescription="Favorite"
+        android:src="@drawable/indicator_starred"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:id="@+id/list_item_trail"
+        style="@style/ListItemContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/carrot_button"
+        android:paddingRight="@dimen/whats_on_button_right_padding" >
+
+        <LinearLayout
+            android:id="@+id/statusTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/status"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription="Trail status"
+                android:scaleType="centerInside"
+                android:src="@drawable/condition_poor"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/trail_title"
+                style="@style/ListItemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="test"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/trail_subtitle"
+            style="@style/ListItemSubtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusTitle"
+            android:layout_marginLeft="30dp"
+            android:text="subtitle"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</FrameLayout>

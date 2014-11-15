@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    	<item android:id="@+id/menu_add_condition" android:icon="@drawable/btn_update"
+		android:title="@string/addCondition" android:orderInCategory="2"
+		android:showAsAction="ifRoom" />
+
+</menu>

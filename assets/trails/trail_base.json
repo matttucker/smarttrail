@@ -1,0 +1,27 @@
+{
+      "id": "trail_",
+      "area_id": "area_",
+      "doc_type": "trail",
+      "name": "",
+      "description": "",
+      "tech_rating": 1,
+      "aerobic_rating": 1,
+      "cool_rating": 1,
+      "elevation_gain": 6.7056,
+      "length": 5149.9,
+      "image_url": "http://bouldermountainbike.org/sites/default/files/imagecache/710x230/101_2437-1.JPG",
+      "trailheads": {
+            "type": "FeatureCollection",
+            "features": [{
+                  "type": "Feature",
+                  "geometry": {
+                        "type": "Point",
+                        "coordinates": [-109.693728, 38.596205]
+                  },
+                  "properties": {
+                        "prop0": "value0"
+                  }
+            }]
+      },
+      
+}

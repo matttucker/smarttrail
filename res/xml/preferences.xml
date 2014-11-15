@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <PreferenceCategory android:title="MAP" >
+        <ListPreference
+            android:defaultValue="@string/pref_default_map_view"
+            android:entries="@array/pref_map_view_values"
+            android:entryValues="@array/pref_map_view_values"
+            android:key="@string/pref_key_map_view"
+            android:persistent="true"
+            android:title="@string/pref_title_map_view" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="ABOUT" >
+       <Preference android:title="@string/title_version"
+           		android:summary="1.0.0"
+                android:key="@string/prefkey_version"/>
+       <Preference android:title="@string/title_license_agreement"
+           		android:summary="@string/summary_license_agreement"
+                android:key="@string/prefkey_license_agreement"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="OTHER" >
+       <Preference android:title="@string/signout"
+                android:key="@string/prefkey_signout"/>
+    </PreferenceCategory>
+</PreferenceScreen>
